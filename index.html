@@ -3,7 +3,27 @@
   <head>
     <style>* { font-family:arial }
     body { background-color:lightblue }
-    h1 { color: red }</style>
+    h1 { color: red }
+    body {
+  background-color: rgb(241, 250, 238);
+}
+
+.titulos {
+  text-align: center;
+  color: rgb(27, 38, 59);
+}
+
+.texto {
+  color: rgb(45, 55, 72);
+}
+
+.practicas .titulos {
+  color: rgb(45, 106, 79);
+}
+
+.recursos .titulos {
+  color: rgb(138, 43, 226);
+}</style>
     <meta charset="utf-8">
     <title>Mi trabajo en TICII · Olai Diaz Gancedo</title>
   </head>
@@ -20,13 +40,15 @@
         
     </ul>
 
-    <section h2 id="presentacion">Presentación</h2>
-    <p>Hola, soy <strong>Olai Díaz Gazncedo</strong> (1ºBACH/A). Me interesan <em>el futbol</em>, <em>los videojuegos</em> y <em>salir con mis amigos</em>. 
+   <section id="presentacion">
+  <h2 class="titulos">Presentación</h2>
+    <p  class="texto">Hola, soy <strong>Olai Díaz Gancedo</strong> (1ºBACH/A). Me interesan <em>el futbol</em>, <em>los videojuegos</em> y <em>salir con mis amigos</em>. 
     En esta página podrás consultar mis ejercicios de introducción a HTML y algunos recursos que considero útiles.</p>
-    <p><small>Última actualización: <!-- TODO: fecha -->.</small></p>
+    <p  class="texto"><small>Última actualización: <!-- TODO: fecha -->.</small></p>
 </section>
-    <section h2 id="ejs html">Mis ejercicios · Introducción HTML</h2>
-    <p>Accede a cada ejercicio desde esta lista. Los archivos están en la carpeta <code>ejercicios_html/</code>:</p>
+  <section id="html" class="practicas">
+  <h2 class="titulos">Mis ejercicios · Introducción HTML</h2>
+    <p  class="texto">Accede a cada ejercicio desde esta lista. Los archivos están en la carpeta <code>ejercicios_html/</code>:</p>
     <ul>
       <li><a href="Ejercicios_html/web_DíazGancedo_Olai.html">Tarea 1 · Estructura mínima + títulos y párrafos</a></li>
       <li><a href="Ejercicios_html/web_DíazGancedo_Olai_tarea2_.html">Tarea 2 · Énfasis y anidado de etiquetas (inline)</a></li>
@@ -35,11 +57,13 @@
       <li><a href="Ejercicios_html/web_DíazGancedo_Olai_tarea5_.html">Tarea 5 · Imágenes con <code>&lt;img&gt;</code></a></li>
     </ul>
 </section>
-<section h2 id="ejs css">Mis ejercicios · Introducción CSS</h2>
+<section id="ejs css" class="practicas">
+  <h2 class="titulos">Mis ejercicios · Introducción CSS</h2>
     <li><a href="Ejercicios_css/web_DiazGancedoOlai_css_1.html">Tarea 1 · Criatura colorida</a>
     <li><a href="Ejercicios_css/web_DiazGancedoOlai_css_2.html">Tarea 2 · Índice + dos animales</a>
 </section>
-    <h2 id="recursos de calidad">Recursos de calidad (externos)</h2>
+    <section id="recursos de calida" class="recursos">
+  <h2 class="titulos">Recursos de calidad (externos)</h2>
     <p>Referencias consultadas durante las tareas (se abrirán en pestaña nueva):</p>
     <ul>
       <li><a href="https://transparency.meta.com/es-es/policies/community-standards/?source=https%3A%2F%2Fwww.facebook.com%2Fcommunitystandards%2F" target="_blank">Comportamiento en internet</a></li>
@@ -47,20 +71,23 @@
       <li><a href="https://www.cisa.gov/password-management" target="_blank">Como hacer una contraseña segura</a></li>
     </ul>
 </section>
-    <h2 id="creditos">Créditos y licencias</h2>
-    <p>Recoge aquí, en una lista, los autores, títulos, licencias y enlaces de las imágenes usadas:</p>
+    <section id="creditos" class="recursos">
+  <h2 class="titulos">Créditos y licencias</h2>
+    <p  class="texto">Títulos, licencias y enlaces de las imágenes usadas.</p>
     <ul>
       <li><a href="URL" target="_blank">https://vectorportal.com/es/vector/servicio-de-reparaci%C3%B3n-de-computadoras/33781.</a></li><li><a href="URL" target="_blank">https://italianbusinesslawyers.com/es/credito-fiscal-para-las-empresas-italianas-que-inviertan-en-innovacion/"</a></li><li><a href="URL" target="_blank">https://vectorportal.com/es/vector/imagen-de-vector-de-bloqueo-de-contrase%C3%B1a.ai/26351.</a></li>
     </ul>
 </section>
-      <section h2 id="contacto">Contacto</h2>
-    <p>Si necesitas comentar algo sobre mis ejercicios, háblame en clase o consulta al profesor. 
+  <section id="contacto">
+  <h2 class="titulos">Contacto</h2>
+    <p  class="texto">Si necesitas comentar algo sobre mis ejercicios, háblame en clase o consulta al profesor. 
     También puedes enlazar recursos de interés y anotarlos aquí.</p>
 </section>
     
   </body>
 
 </html>
+
 
 
 
