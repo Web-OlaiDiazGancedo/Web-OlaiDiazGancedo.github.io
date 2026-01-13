@@ -1,1 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS 2 · id + índice — Nombre Apellidos</title>
+    <style>
+      /* Tipografía global (web-safe) */
+      * { font-family: Georgia, serif; }
+
+      /* Fondo general (RGB) */
+      body { background-color: rgb(241, 250, 238); }
+
+      /* === REGLAS GENERALES (afectan al primer animal) === */
+      h1 { color: rgb(45, 106, 79); }      /* color 1 */
+      p  { color: rgb(150, 75, 0); }       /* color 2 */
+      strong { color: rgb(150, 75, 0); } /* énfasis general */
+
+      /* === REGLAS POR id (afectan SOLO al segundo animal) === */
+      #titulo-animal2 { color: rgb(255 0, 0); }   /* morado de ejemplo */
+      #desc-animal2   { color: rgb(0, 0, 255); }     /* azul petróleo */
+      #desc-animal2 strong { color: rgb(159, 159, 24); } /* énfasis SOLO dentro del segundo párrafo */
+    </style>
+  </head>
+  <body>
+    <!-- ÍNDICE: ul con enlaces a ids -->
+    <h2 id="indice">Índice</h2>
+    <ul>
+      <li><a href="#titulo-animal1">Primera criatura</a></li>
+      <li><a href="#titulo-animal2">Segunda criatura</a></li>
+    </ul>
+
+    <!-- PRIMER ANIMAL: añade ids para enlazar desde el índice -->
+    <h1 id="titulo-animal1">Criatura colorida</h1>
+    <p id="desc-animal1">
+      El ornitorrinco</strong> es un<strong> mamífero</strong> semiacuático originario de Australia. Tiene un aspecto muy particular: pico similar al de un pato, cuerpo cubierto de pelo, patas palmeadas y cola ancha. Aunque es mamífero,<strong> pone huevos</strong> y produce leche para alimentar a sus crías. Además, los machos poseen un <strong>espolón venenoso</strong>, lo que lo convierte en uno de los animales más<strong> singulares </strong>del mundo.
+    </p>
+    <img src="../Imagenes/criatura.jfif"
+         alt="Ornitorrico en su habitat"
+         width="520">
+    <p><a href="#indice">Volver al índice</a></p>
+
+    <!-- SEGUNDO ANIMAL: con ids para estilo y para anclar desde el índice -->
+    <h1 id="titulo-animal2">Segundo animal: Loro</h1>
+    <p id="desc-animal2">
+    El <strong>loro colorido</strong> es un ave exótica que se distingue por su plumaje <strong>brillante</strong> y de tonos <strong>intensos</strong> como el verde, rojo, azul y amarillo. Es reconocido por su gran <strong>inteligencia</strong> y su notable habilidad para <strong>imitar sonidos</strong> y palabras humanas. Este animal habita principalmente en regiones <strong>tropicales</strong> y <strong>subtropicales</strong>, donde vive en grupos y muestra un comportamiento muy <strong>sociable</strong>. Además, el loro posee un pico <strong>fuerte</strong> y curvado que utiliza para alimentarse y trepar, así como una personalidad <strong>curiosa</strong> y <strong>enérgica</strong> que lo hace especialmente llamativo.
+    </p>
+     <img src="../Imagenes/criatura 2.jfif"
+         alt="Loro multicolor"
+         width="520">
+    <p><a href="#indice">Volver al índice</a></p>
+  </body>
+
+</html>
 
