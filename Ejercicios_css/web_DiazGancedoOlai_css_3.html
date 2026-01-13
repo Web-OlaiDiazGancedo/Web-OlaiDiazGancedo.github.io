@@ -9,45 +9,71 @@
 
       /* Fondo general (RGB) */
       body { background-color: rgb(241, 250, 238); }
+.grupo-a .titulo {
+  color: rgb(45, 106, 79);
+}
 
-      /* === REGLAS GENERALES (afectan al primer animal) === */
-      h1 { color: rgb(45, 106, 79); }      /* color 1 */
-      p  { color: rgb(150, 75, 0); }       /* color 2 */
-      strong { color: rgb(150, 75, 0); } /* énfasis general */
+.grupo-a .texto {
+  color: rgb(27, 38, 59);
+}
 
-      /* === REGLAS POR id (afectan SOLO al segundo animal) === */
-      #titulo-animal2 { color: rgb(255 0, 0); }   /* morado de ejemplo */
-      #desc-animal2   { color: rgb(0, 0, 255); }     /* azul petróleo */
-      #desc-animal2 strong { color: rgb(159, 159, 24); } /* énfasis SOLO dentro del segundo párrafo */
+.grupo-a .texto strong {
+  color: rgb(10, 123, 131);
+}
+      .grupo-b .titulo {
+  color: rgb(138, 43, 226);
+}
+
+.grupo-b .texto {
+  color: rgb(38, 70, 83);
+}
+
+.grupo-b .texto strong {
+  color: rgb(244, 162, 97);
+}
     </style>
   </head>
   <body>
     <!-- ÍNDICE: ul con enlaces a ids -->
     <h2 id="indice">Índice</h2>
     <ul>
-      <li><a href="#titulo-animal1">Primera criatura</a></li>
-      <li><a href="#titulo-animal2">Segunda criatura</a></li>
+      <li><a href="#grupo-a">Grupo A</a></li>
+      <li><a href="#grupo-b">Grupo B</a></li>
     </ul>
 
-    <!-- PRIMER ANIMAL: añade ids para enlazar desde el índice -->
-    <h1 id="titulo-animal1">Criatura colorida</h1>
-    <p id="desc-animal1">
-      El ornitorrinco</strong> es un<strong> mamífero</strong> semiacuático originario de Australia. Tiene un aspecto muy particular: pico similar al de un pato, cuerpo cubierto de pelo, patas palmeadas y cola ancha. Aunque es mamífero,<strong> pone huevos</strong> y produce leche para alimentar a sus crías. Además, los machos poseen un <strong>espolón venenoso</strong>, lo que lo convierte en uno de los animales más<strong> singulares </strong>del mundo.
+ <section id="grupo-a" class="grupo-a">
+    <h1 class="titulo">Grupo A</h1>
+   <h2 class="titulo">Leon</h2>
+   <p class="texto">
+    Habita sabanas africanas; destaca por su melena y su <strong>presencia dominante</strong>.Es un<strong> carnívoro</strong> que caza grandes presas
     </p>
-    <img src="../Imagenes/criatura.jfif"
-         alt="Ornitorrico en su habitat"
+    <img src="../Imagenes/leon.jfif"
+         alt="León en su habitat"
          width="520">
-    <p><a href="#indice">Volver al índice</a></p>
+   <h2 class="titulo">Águila Real</h2>
+    <p class="texto">Vive en zonas montañosas y abiertas; es carnívora, se alimenta de pequeños mamíferos y posee un <strong>vuelo majestuoso</strong>.</p>
+     <img src="../Imagenes/aguila.jfif"
+         alt="León en su habitat"
+         width="520">
+   
+      <h2 class="titulo">Oso pardo</h2>
+   <p class="texto">
+   Habita bosques y regiones montañosas; es omnívoro y se caracteriza por su <strong>fuerza imponente</strong>.
+    </p>
+    <img src="../Imagenes/oso.jfif"
+         alt="Oso en su habitat"
+         width="520"><p><a href="#indice">Volver al índice</a></p>
 
-    <!-- SEGUNDO ANIMAL: con ids para estilo y para anclar desde el índice -->
-    <h1 id="titulo-animal2">Segundo animal: Loro</h1>
-    <p id="desc-animal2">
+       <a href="#indice">Volver al índice</a>
+     <section id="grupo-b" class="grupo-b">
+   <h1 class="titulo">Grupo B</h1>
+    <p class="texto">
     El <strong>loro colorido</strong> es un ave exótica que se distingue por su plumaje <strong>brillante</strong> y de tonos <strong>intensos</strong> como el verde, rojo, azul y amarillo. Es reconocido por su gran <strong>inteligencia</strong> y su notable habilidad para <strong>imitar sonidos</strong> y palabras humanas. Este animal habita principalmente en regiones <strong>tropicales</strong> y <strong>subtropicales</strong>, donde vive en grupos y muestra un comportamiento muy <strong>sociable</strong>. Además, el loro posee un pico <strong>fuerte</strong> y curvado que utiliza para alimentarse y trepar, así como una personalidad <strong>curiosa</strong> y <strong>enérgica</strong> que lo hace especialmente llamativo.
     </p>
-     <img src="../Imagenes/criatura 2.jfif"
+     <img src="../Imagenes/lobo.jfif"
          alt="Loro multicolor"
          width="520">
-    <p><a href="#indice">Volver al índice</a></p>
+    <a href="#indice">Volver al índice</a>
   </body>
 
 </html>
