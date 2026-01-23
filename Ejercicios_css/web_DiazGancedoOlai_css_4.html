@@ -9,7 +9,6 @@ body {
   padding: 0;
 }
 
-/* ===== ZONAS SEMÁNTICAS COMO CAJAS ===== */
 header, nav, main, footer {
   max-width: 1000px;
   margin: 20px auto;
@@ -19,13 +18,12 @@ header, nav, main, footer {
   padding: 16px;
 }
 
-/* Header: centrado y espaciado (sin imponer color, lo decidirán las clases si lo deseas) */
 header h1 {
   text-align: center;
   margin: 0 0 10px 0;
 }
 
-/* Nav: que se lea limpio (sin fijar colores de títulos de grupo) */
+
 nav h2 {
   margin: 0 0 10px 0;
   text-align: center;
@@ -36,12 +34,12 @@ nav ul {
   padding: 0 0 0 18px;
 }
 
-/* Enlaces del nav: un color neutro (no depende del grupo) */
+
 nav a {
   color: rgb(27, 38, 59);
 }
 
-/* ===== SECCIONES DE GRUPO COMO “BLOQUES” ===== */
+
 section {
   border: 2px dashed rgb(220, 226, 230);
   border-radius: 12px;
@@ -50,7 +48,7 @@ section {
   background-color: rgb(250, 251, 252);
 }
 
-/* ===== TARJETAS (article) ===== */
+
 article {
   border: 1px solid rgb(225, 230, 235);
   background-color: rgb(255, 255, 255);
@@ -59,10 +57,7 @@ article {
   margin: 12px 0;
 }
 
-/* IMPORTANTE: aquí NO ponemos colores para h2/h3/p/strong.
-   Los colores los controla CSS 3 con .titulo, .texto, .grupo-a, .grupo-b.
-*/
-/* ===== CLASES BASE ===== */
+
 .titulo {
   text-align: center;
   color: rgb(27, 38, 59);
@@ -76,7 +71,7 @@ article {
   color: rgb(231, 111, 81);
 }
 
-/* ===== MODIFICADORES DE GRUPO ===== */
+
 .grupo-a .titulo { color: rgb(45, 106, 79); }
 .grupo-a .texto  { color: rgb(27, 38, 59); }
 .grupo-a .texto strong { color: rgb(10, 123, 131); }
@@ -85,24 +80,35 @@ article {
 .grupo-b .texto  { color: rgb(38, 70, 83); }
 .grupo-b .texto strong { color: rgb(244, 162, 97); }
 </style>
+<h2 id="indice">Índice</h2>
+    <ul>
+      <li><a href="#grupo-a">Grupo A</a></li>
+      <li><a href="#grupo-b">Grupo B</a></li>
+    </ul>
 <section id="grupo-a" class="grupo-a">
   <h2 class="titulo">Grupo A</h2>
 
   <article>
-    <h3 class="titulo">Criatura A1</h3>
-    <p class="texto">Descripción... <strong>rasgo</strong></p>
+    <h3 class="titulo">El Zorro</h3>
+    <p class="texto">Mamífero de <strong>tamaño mediano</strong> que habita en <strong>bosques y zonas rurales</strong>. Tiene un <strong>pelaje rojizo</strong> y una <strong>cola larga y espesa</strong> que le ayuda a mantener el equilibrio y el calor. Es un animal <strong>astuto</strong>, activo sobre todo durante la <strong>noche</strong>.<strong>rasgo</strong></p>
   </article>
 
   <article>
-    <h3 class="titulo">Criatura A2</h3>
-    <p class="texto">Descripción... <strong>rasgo</strong></p>
+    <h3 class="titulo">El Búho Común</h3>
+    <p class="texto"><strong>Ave rapaz nocturna</strong> que vive en <strong>árboles</strong> y <strong>construcciones abandonadas</strong>. Posee una <strong>vista</strong> y un <strong>oído muy desarrollados</strong>, lo que le permite cazar <strong>pequeños roedores</strong> en la <strong>oscuridad</strong>. Durante el <strong>día</strong> suele permanecer <strong>escondido</strong>. <strong>rasgo</strong></p>
   </article>
 </section>
 <section id="grupo-b" class="grupo-b">
   <h2 class="titulo">Grupo B</h2>
 
   <article>
-    <h3 class="titulo">Criatura B1</h3>
-    <p class="texto">Descripción... <strong>rasgo</strong></p>
+    <h3 class="titulo">El Tejón</h3>
+    <p class="texto">Mamífero <strong>robusto</strong> que vive en <strong>madrigueras subterráneas</strong> en <strong>zonas boscosas</strong>. Es <strong>principalmente nocturno</strong> y se alimenta de <strong>raíces, insectos y pequeños animales</strong>. Sus <strong>fuertes patas delanteras</strong> están adaptadas para <strong>excavar</strong>. </p>
+  </article>
+  
+  <article>
+    <h3 class="titulo">La Tortuga Terrestre</h3>
+    <p class="texto"><strong>Reptil</strong> de <strong>movimientos lentos</strong> que habita en <strong>zonas secas y cálidas</strong>. Posee un <strong>caparazón duro</strong> que la protege de <strong>depredadores</strong>. Puede <strong>vivir muchos años</strong> y se alimenta principalmente de <strong>plantas</strong>.</p>
+  
   </article>
 </section>
