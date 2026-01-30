@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Mi trabajo en TICII · Olai Díaz Gancedo</title>
+
+  <style>
+    /* =====================
+       ESTILO GENERAL
+    ====================== */
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(178, 255, 255);
+      color: rgb(45, 55, 72);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    /* =====================
+       TIPOGRAFÍA
+    ====================== */
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 24px;
+      color: rgb(27, 38, 59);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    /* =====================
+       NAVEGACIÓN
+    ====================== */
+    nav {
+      background-color: rgb(245, 247, 250);
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      border: 1px solid rgb(210, 220, 230);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 6px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: rgb(27, 38, 59);
+      padding: 8px 14px;
+      background-color: rgb(220, 230, 245);
+      border-radius: 8px;
+      border: 1px solid rgb(180, 190, 200);
+    }
+
+    nav a:hover {
+      background-color: rgb(200, 215, 235);
+    }
+
+    /* =====================
+       SECCIONES
+    ====================== */
+    section {
+      background-color: rgb(245, 247, 250);
+      padding: 20px;
+      margin-bottom: 24px;
+      border-radius: 14px;
+      border: 1px solid rgb(210, 220, 230);
+    }
+
+    section h2 {
+      color: rgb(45, 106, 79);
+    }
+
+    .recursos h2 {
+      color: rgb(138, 43, 226);
+    }
+
+    /* =====================
+       LISTAS DE ENLACES
+    ====================== */
+    .lista-enlaces {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .lista-enlaces li {
+      margin-bottom: 8px;
+    }
+
+    .lista-enlaces a {
+      color: rgb(27, 38, 59);
+      text-decoration: none;
+    }
+
+    .lista-enlaces a:hover {
+      color: rgb(15, 109, 200);
+      text-decoration: underline;
+    }
+
+    /* =====================
+       ENLACES GENERALES
+    ====================== */
+    a:hover {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+
+<body>
+
+<main>
+
+  <h1>Mi trabajo en TICII — Olai Díaz Gancedo</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#presentacion">Presentación</a></li>
+      <li><a href="#html">Ejercicios HTML</a></li>
+      <li><a href="#css">Ejercicios CSS</a></li>
+      <li><a href="#recursos">Recursos</a></li>
+      <li><a href="#creditos">Créditos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="inicio">
+    <p>Bienvenido a mi página de trabajos de TICII.</p>
+  </section>
+
+  <section id="presentacion">
+    <h2>Presentación</h2>
+    <p>Hola, soy <strong>Olai Díaz Gancedo</strong> (1º BACH/A).  
+    Me interesan el fútbol, los videojuegos y salir con mis amigos.</p>
+  </section>
+
+  <section id="html">
+    <h2>Ejercicios · Introducción HTML</h2>
+    <ul class="lista-enlaces">
+      <li><a href="Ejercicios_html/web_DíazGancedo_Olai.html">Tarea 1 · Estructura mínima</a></li>
+      <li><a href="Ejercicios_html/web_DíazGancedo_Olai_tarea2_.html">Tarea 2 · Énfasis</a></li>
+      <li><a href="Ejercicios_html/web_DíazGancedo_Olai_tarea3_.html">Tarea 3 · Listas</a></li>
+      <li><a href="Ejercicios_html/web_DíazGancedo_Olai_tarea4_.html">Tarea 4 · Enlaces</a></li>
+      <li><a href="Ejercicios_html/web_DíazGancedo_Olai_tarea5_.html">Tarea 5 · Imágenes</a></li>
+    </ul>
+  </section>
+
+  <section id="css">
+    <h2>Ejercicios · Introducción CSS</h2>
+    <ul class="lista-enlaces">
+      <li><a href="Ejercicios_css/web_DiazGancedoOlai_css_1.html">Tarea 1 · Criatura colorida</a></li>
+      <li><a href="Ejercicios_css/web_DiazGancedoOlai_css_2.html">Tarea 2 · Índice</a></li>
+      <li><a href="Ejercicios_css/web_DiazGancedoOlai_css_3.html">Tarea 3 · Grupos</a></li>
+      <li><a href="Ejercicios_css/web_DiazGancedoOlai_css_4.html">Tarea 4 · Cajas</a></li>
+    </ul>
+  </section>
+
+  <section id="recursos" class="recursos">
+    <h2>Recursos de calidad</h2>
+    <ul class="lista-enlaces">
+      <li><a href="https://transparency.meta.com/es-es/policies/community-standards/" target="_blank">Comportamiento en internet</a></li>
+      <li><a href="https://csrc.nist.gov/publications" target="_blank">Hardware y seguridad</a></li>
+      <li><a href="https://www.cisa.gov/password-management" target="_blank">Contraseñas seguras</a></li>
+    </ul>
+  </section>
+
+  <section id="creditos">
+    <h2>Créditos y licencias</h2>
+    <p>Imágenes usadas con licencia correspondiente.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Para cualquier duda, consúltame en clase o habla con el profesor.</p>
+  </section>
+
+</main>
+
+</body>
+</html>
