@@ -1,25 +1,25 @@
 <html>
 <head>
-    <title>Multiplicación</title>
+    <title>Promedio</title>
 </head>
 <body>
 
 <script>
-let factor_1;
-let factor_2;
-let producto;
+let numero_1;
+let numero_2;
+let resultado;
 
-factor_1 = prompt("Pon un numero que quieras multiplicar");
-factor_2 = prompt("Pon otro numero que quieras multiplicar");
+numero_1 = prompt("Pon un numero que quieras");
+numero_2 = prompt("Pon otro numero para hacer media");
 
-factor_1 = parseFloat(factor_1);
-factor_2 = parseFloat(factor_2);
+numero_1 = parseFloat(numero_1);
+numero_2 = parseFloat(numero_2);
 
-producto = factor_1 * factor_2;
+resultado = (numero_1 + numero_2) / 2;
 
-alert("El resultado de la multiplicacion es: " + producto);
+alert("El resultado de la media es: " + resultado);
 
-document.write("<h1>El resultado de la multiplicacion es: " + producto + "</h1>");
+document.write("<h1>El resultado de la media es: " + resultado + "</h1>");
 </script>
 
 </body>
