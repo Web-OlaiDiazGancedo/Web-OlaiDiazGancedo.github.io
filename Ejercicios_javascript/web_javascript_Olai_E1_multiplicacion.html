@@ -1,30 +1,28 @@
 <html>
 <head>
-<title>Multiplicación</title>
+<title>Suma</title>
 <body>
 <script>
+let sumando_1;
+let sumando_2;
+let suma;
+sumando_1=prompt("Pon un numero que quieras sumar")
+sumando_2=prompt("Pon otro numero que quieras sumar")
 
-let factor_1; 
-let factor_2;
-let producto;
-factor_1=prompt("Pon un numero que quieras multiplicar")
-factor_2=prompt("Pon otro numero que quieras multiplicar")
-
-factor_1=parseFloat(factor_1)
+sumando_1=parseFloat(sumando_1)
 ;
-factor_2=parseFloat(factor_2)
+sumando_2=parseFloat(sumando_2)
 ;
 
-producto=factor_1+factor_2
+suma=sumando_1*sumando_2
 
-alert("El resultado de la multplicación es:" +producto);
+alert("El resultado de la suma es:"+ suma);
 
-document.write("<h1>El resultado de la multplicación es:"+producto"</h1>")
-
-
+document.write("<h1>El resultado de la suma es:"+ suma+ "</h1>")
 
 
 </script>
 </body>
 
 </head>
+
