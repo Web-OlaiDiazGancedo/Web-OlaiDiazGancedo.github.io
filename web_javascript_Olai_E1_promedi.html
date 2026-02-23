@@ -1,25 +1,21 @@
 <html>
 <head>
-    <title>Rectangulo</title>
+    <title>Kilometros a metros</title>
 </head>
 <body>
 
 <script>
-let lado
-let lado_2 
+let km;
 
-lado = prompt("Pon un numero que quieras que sea lado");
-lado_2 = prompt("Pon un numero que quieras que sea el otro lado");
+km = prompt("Pon un numero de kilometros para pasarlo a metros");
 
-lado = parseFloat(lado);
-lado_2 = parseFloat(lado 2);
+km = parseFloat(km);
 
+let metros = km * 1000;
 
-area = lado*lado_2
+alert("Eso son " + metros + " metros");
 
-alert("El area del rectangulo es: " + area);
-
-document.write("<h1>El area del rectangulo es: " + area+ "</h1>");
+document.write("<h1>Eso son " + metros + " metros</h1>");
 </script>
 
 </body>
