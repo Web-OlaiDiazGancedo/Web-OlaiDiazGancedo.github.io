@@ -1,22 +1,21 @@
 <html>
 <head>
-    <title>Pulgadas a centimetros</title>
+    <title>Pulgadas a centímetros</title>
 </head>
 <body>
 
 <script>
-let pulgadas
+let pulgadas;
+let centimetros;
 
-pulgadas = prompt("Pon un numero de pulgadas para pasarlo a centimetros");
+pulgadas = prompt("Pon un número de pulgadas para pasarlo a centímetros");
+pulgadas = parseFloat(pulgadas);
 
- pulgadas= parseFloat(pulgadas);
+centimetros = pulgadas * 2.54;
 
+alert("Eso son " + centimetros + " centímetros");
 
-centimetros = pulgadas * 2.54
-
-alert("Eso son " + centimetros "centimetros");
-
-document.write("<h1>Eso son " + centimetros "centimetros"</h1>");
+document.write("<h1>Eso son " + centimetros + " centímetros</h1>");
 </script>
 
 </body>
