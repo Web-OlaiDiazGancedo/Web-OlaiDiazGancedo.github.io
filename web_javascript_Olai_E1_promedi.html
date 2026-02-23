@@ -1,21 +1,21 @@
 <html>
 <head>
-    <title>Kilometros a metros</title>
+    <title>Pulgadas a centímetros</title>
 </head>
 <body>
 
 <script>
-let km;
+let pulgadas;
+let centimetros;
 
-km = prompt("Pon un numero de kilometros para pasarlo a metros");
+pulgadas = prompt("Pon un número de pulgadas para pasarlo a centímetros");
+pulgadas = parseFloat(pulgadas);
 
-km = parseFloat(km);
+centimetros = pulgadas * 2.54;
 
-let metros = km * 1000;
+alert("Eso son " + centimetros + " centímetros");
 
-alert("Eso son " + metros + " metros");
-
-document.write("<h1>Eso son " + metros + " metros</h1>");
+document.write("<h1>Eso son " + centimetros + " centímetros</h1>");
 </script>
 
 </body>
