@@ -5,17 +5,17 @@
 <body>
 
 <script>
-let pulgadas;
-let centimetros;
+let hectareas;
 
-pulgadas = prompt("Pon un numero de pulgadas para pasarlo a centimetros");
-pulgadas = parseFloat(pulgadas);
 
-centimetros = pulgadas * 2.54;
+hectareas  = prompt("Pon un numero de hectareas para pasarlo a metros cuadrados");
+hectareas = parseFloat(hectareas );
 
-alert("Eso son " + centimetros + " centimetros");
+metros_cuadrados = hectareas  * 10000;
 
-document.write("<h1>Eso son " + centimetros + " centimetros</h1>");
+alert("Eso son " + metros_cuadrados + " metros cuadrados");
+
+document.write("<h1>Eso son " + metros_cuadrados + " metros cuadrados</h1>");
 </script>
 
 </body>
