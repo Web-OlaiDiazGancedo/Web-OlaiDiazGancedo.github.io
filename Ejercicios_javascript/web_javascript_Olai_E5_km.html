@@ -5,18 +5,17 @@
 <body>
 
 <script>
-let km
+let km;
 
 km = prompt("Pon un numero de kilometros para pasarlo a metros");
 
- km= parseFloat( km);
+km = parseFloat(km);
 
+let metros = km * 1000;
 
-metros = km*1000
+alert("Eso son " + metros + " metros");
 
-alert("Eso son " + metros + "metros");
-
-document.write("<h1>Eso son " + metros + "metros"</h1>");
+document.write("<h1>Eso son " + metros + " metros</h1>");
 </script>
 
 </body>
