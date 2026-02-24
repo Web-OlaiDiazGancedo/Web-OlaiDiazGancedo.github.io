@@ -4,15 +4,22 @@
 </head>
 <body>
 <script>
-let fallos;
-fallos = prompt("Pon cuantos fallos tuviste");
-fallos = parseFloat(fallos);
-if (fallos > 3) {
-    alert("No eres Apto");
-    document.write("<h1>No eres Apto</h1>");
+let nota_1;
+    let nota_2;
+    let nota_3;
+nota_1 = prompt("Pon tu primera nota");
+    nota_2 = prompt("Pon tu segunda nota");
+    nota_3 = prompt("Pon tu tercera nota");
+nota_1 = parseFloat(nota_1);
+    nota_2 = parseFloat(nota_2);
+    nota_3 = parseFloat(nota_3);
+media=(nota_1+nota_2+nota_3)/3
+if (media > 4,5) {
+    alert("Enhorabuena, has aprobado");
+    document.write("<h1>Enhorabuena, has aprobado</h1>");
 } else {
-    alert("Eres Apto");
-    document.write("<h1>Eres Apto</h1>");
+    alert("Estas suspenso");
+    document.write("<h1>Estas suspenso</h1>");
 }
 </script>
 
