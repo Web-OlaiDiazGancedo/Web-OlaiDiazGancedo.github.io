@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Media del curso</title>
+</head>
+<body>
+<script>
+let nota_1;
+    let nota_2;
+    let nota_3;
+nota_1 = prompt("Pon tu primera nota");
+    nota_2 = prompt("Pon tu segunda nota");
+    nota_3 = prompt("Pon tu tercera nota");
+nota_1 = parseFloat(nota_1);
+    nota_2 = parseFloat(nota_2);
+    nota_3 = parseFloat(nota_3);
+media=(nota_1+nota_2+nota_3)/3
+if (media > 4.5) {
+    alert("Enhorabuena, has aprobado");
+    document.write("<h1>Enhorabuena, has aprobado</h1>");
+} else {
+    alert("Estas suspenso");
+    document.write("<h1>Estas suspenso</h1>");
+}
+</script>
+
+</body>
+</html>
