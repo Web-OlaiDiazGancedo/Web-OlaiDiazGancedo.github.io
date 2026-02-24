@@ -7,18 +7,16 @@
 <script>
 let fallos;
 
+fallos = prompt("¿Cuantos fallos tuviste?");
+fallos = parseFloat(fallos);
 
-fallos= prompt("¿Cuantos fallos tuviste?");
-fallos= parseFloat(fallos);
-
-if(numero Fallos>3){
-alert("No eres Apto");
+if (fallos > 3) {
+    alert("No eres Apto");
+    document.write("<h1>No eres Apto</h1>");
+} else {
+    alert("Eres Apto");
+    document.write("<h1>Eres Apto</h1>");
 }
-  document.write("<h1>No eres Apto</h1>")
-else{
-alert("Eres Apto");
-}
-  document.write("<h1>Eres Apto</h1>")
 </script>
 
 </body>
