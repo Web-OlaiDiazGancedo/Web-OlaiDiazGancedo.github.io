@@ -1,81 +1,116 @@
 <!doctype html>
 
- 
-
 <html lang="es">
 
- 
+<head>
 
-  <head>
+<meta charset="utf-8">
 
- 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
+<title>P01 — Consola, tipos y operadores</title>
 
- 
+</head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
 
- 
+<h1>P01 — Consola, tipos y operadores</h1>
 
-    <title>P01 — Consola, tipos y operadores</title>
+<p>Abre la consola del navegador para ver parte de los resultados (F12).</p>
 
- 
+<script>
 
-  </head>
+// BLOQUE 1 — Secuencia
 
- 
+// Secuencia de pasos para hacer un café
 
-  <body>
+/* Estas alertas deben tener sentido en orden.
+   JavaScript ejecuta el código de arriba hacia abajo. */
 
- 
+alert("Paso 1: Pon agua en la cafetera");
+alert("Paso 2: Añade café molido");
+alert("Paso 3: Enciende la cafetera");
+alert("Paso 4: Sirve el café en la taza");
 
-    <h1>P01 — Consola, tipos y operadores</h1>
 
- 
+// BLOQUE 2 — Consola: + con tipos
 
-    <p>Abre la consola del navegador para ver parte de los resultados (F12).</p>
+var x = 16 + 4;
+console.log(x); // 20
 
- 
+var x = "16" + "Blue";
+console.log(x); // 16Blue
 
-    <script>
+var x = 16 + 4 + "Blue";
+console.log(x); // 20Blue
 
- 
+var x = "Blue" + 16 + 4;
+console.log(x); // Blue164
 
-     alert("Paso 1: ...");
 
- 
+// BLOQUE 3 — Consola: undefined y cambios de tipo
 
-alert("Paso 2: ...");
+var x;
+console.log(x); // undefined
 
- 
+var x = 5;
+console.log(x); // 5
 
-alert("Paso 3: ...");
-
- 
-
-alert("Paso 4: ...");
-
-var x = "16" + "Blue"; console.log(x); // escribe aquí lo que sale
-
- 
-
-var x = 16 + 4 + "Blue"; console.log(x); // escribe aquí lo que sale
-
- 
-
-var x = "Blue" + 16 + 4; console.log(x); // escribe aquí lo que sale
+var x = "Juan";
+console.log(x); // Juan
 
 
 
- 
+// BLOQUE 4.1 — Prioridad aritmética
 
-    </script>
+var resultado_0 = 33 - 12 / 2;
+var resultado_1 = (33 - 12) / 2;
+var resultado_2 = 33 - 12 * 2;
+var resultado_3 = 33 - 12 ** 2;
+var resultado_4 = (33 - 12) ** 2;
+var resultado_5 = 33 - 12 * 2 ** 2; // de examen
+var resultado_6 = 33 - 12 / 2 ** 2; // de examen
 
- 
 
-  </body>
+console.log("resultado_0 =", resultado_0);
+console.log("resultado_1 =", resultado_1);
+console.log("resultado_2 =", resultado_2);
+console.log("resultado_3 =", resultado_3);
+console.log("resultado_4 =", resultado_4);
+console.log("resultado_5 =", resultado_5);
+console.log("resultado_6 =", resultado_6);
 
- 
+
+// BLOQUE 4.2 — Comparación y lógicos
+
+var resultado_7 = 33 - 12 * 2 ** 2 >= 100; // de examen
+
+var resultado_8 = 33 - 12 / 2 ** 2 >= 100;
+
+var resultado_9 = 33 - 12 * 2 ** 2 < 3 && 2 < 33 - 12 / 2 ** 2; // de examen
+
+
+console.log("resultado_7 =", resultado_7);
+console.log("resultado_8 =", resultado_8);
+console.log("resultado_9 =", resultado_9);
+
+
+
+// SALIDA EN PÁGINA — document.write()
+
+var A = 10;
+var B = 20;
+
+document.write("<h2>Resultados lógicos</h2>");
+
+document.write("<p>A menor que B y B menor que A es: → " + (A < B && B < A) + "</p>");
+
+document.write("<p>A menor que B o B menor que A es: → " + ((A < B) || (B < A)) + "</p>");
+
+document.write("<p>Si negamos que A es menor que B entonces es: → " + (!(A < B)) + "</p>");
+
+</script>
+
+</body>
 
 </html>
