@@ -1,27 +1,116 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Media del curso</title>
+    <meta charset="UTF-8">
+    <title>Ejercicio 09 — Heladería</title>
 </head>
 <body>
-<script>
-let nota_1;
-    let nota_2;
-    let nota_3;
-nota_1 = prompt("Pon tu primera nota");
-    nota_2 = prompt("Pon tu segunda nota");
-    nota_3 = prompt("Pon tu tercera nota");
-nota_1 = parseFloat(nota_1);
-    nota_2 = parseFloat(nota_2);
-    nota_3 = parseFloat(nota_3);
-media=(nota_1+nota_2+nota_3)/3
-if (media > 4.5) {
-    alert("Enhorabuena, has aprobado");
-    document.write("<h1>Enhorabuena, has aprobado</h1>");
-} else {
-    alert("Estas suspenso");
-    document.write("<h1>Estas suspenso</h1>");
-}
-</script>
+
+    <h1>Ejercicio 09 — Heladería</h1>
+
+    <p>
+        En este ejercicio el usuario elige tamaño, sabor y topping
+        de un helado, y el programa calcula el precio final.
+    </p>
+
+    <script>
+
+        // Variable para guardar el precio total
+        var precioTotal = 0;
+
+        // =========================
+        // ELECCIÓN DEL TAMAÑO
+        // =========================
+
+        var tamaño = prompt(
+            "Elige el tamaño del helado:\n" +
+            "- pequeño (1€)\n" +
+            "- mediano (2€)\n" +
+            "- grande (3€)"
+        );
+
+        if (tamaño === "pequeño") {
+            precioTotal += 1;
+        } else if (tamaño === "mediano") {
+            precioTotal += 2;
+        } else if (tamaño === "grande") {
+            precioTotal += 3;
+        } else {
+            alert("Tamaño no válido.");
+        }
+
+        // =========================
+        // ELECCIÓN DEL SABOR
+        // =========================
+
+        var sabor = prompt(
+            "Elige un sabor:\n" +
+            "- vainilla (básico)\n" +
+            "- chocolate (básico)\n" +
+            "- pistacho (premium +1€)\n" +
+            "- turrón (premium +1€)"
+        );
+
+        switch (sabor) {
+
+            case "vainilla":
+            case "chocolate":
+                precioTotal += 0;
+                break;
+
+            case "pistacho":
+            case "turrón":
+                precioTotal += 1;
+                break;
+
+            default:
+                alert("Sabor no válido.");
+        }
+
+        // =========================
+        // ELECCIÓN DEL TOPPING
+        // =========================
+
+        var topping = prompt(
+            "Elige un topping:\n" +
+            "- sirope (+0.3€)\n" +
+            "- galleta (+0.3€)\n" +
+            "- oreo (+0.5€)\n" +
+            "- brownie (+0.5€)"
+        );
+
+        switch (topping) {
+
+            case "sirope":
+            case "galleta":
+                precioTotal += 0.3;
+                break;
+
+            case "oreo":
+            case "brownie":
+                precioTotal += 0.5;
+                break;
+
+            default:
+                alert("Topping no válido.");
+        }
+
+        // =========================
+        // RESULTADO FINAL
+        // =========================
+
+        document.write(
+            "<h1>El precio final de tu helado es: " +
+            precioTotal.toFixed(2) +
+            " €</h1>"
+        );
+
+        // Imagen del helado
+        document.write(
+            '<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Culfi_ice_cream.JPG" alt="Helado" width="300">'
+        );
+
+    </script>
 
 </body>
 </html>
