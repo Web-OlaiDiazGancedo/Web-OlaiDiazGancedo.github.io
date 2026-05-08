@@ -15,11 +15,12 @@
 
     <script>
 
-      
+        // Variable para guardar el precio total
         var precioTotal = 0;
 
-
-  
+        // =========================
+        // ELECCIÓN DEL TAMAÑO
+        // =========================
 
         var tamaño = prompt(
             "Elige el tamaño del helado:\n" +
@@ -38,6 +39,9 @@
             alert("Tamaño no válido.");
         }
 
+        // =========================
+        // ELECCIÓN DEL SABOR
+        // =========================
 
         var sabor = prompt(
             "Elige un sabor:\n" +
@@ -63,6 +67,9 @@
                 alert("Sabor no válido.");
         }
 
+        // =========================
+        // ELECCIÓN DEL TOPPING
+        // =========================
 
         var topping = prompt(
             "Elige un topping:\n" +
@@ -86,7 +93,11 @@
 
             default:
                 alert("Topping no válido.");
+        }
 
+        // =========================
+        // RESULTADO FINAL
+        // =========================
 
         document.write(
             "<h1>El precio final de tu helado es: " +
@@ -94,6 +105,7 @@
             " €</h1>"
         );
 
+        // Imagen del helado
         document.write(
             '<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Culfi_ice_cream.JPG" alt="Helado" width="300">'
         );
