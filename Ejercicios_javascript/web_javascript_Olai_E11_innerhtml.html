@@ -1,98 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 — innerHTML</title>
 
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejercicio 11 — innerHTML</title>
-
-        <style>
-
+    <style>
         .caja {
             border: 2px solid black;
             padding: 10px;
             margin: 10px;
         }
+    </style>
+</head>
+<body>
 
-        </style>
+    <h1>Ejercicio 11 — Modificación de HTML con JavaScript</h1>
 
-    </head>
-    <body>
+    <button onclick="saludar()">Saludar</button>
+    <button onclick="sumarDosNumeros()">Sumar dos números</button>
+    <button onclick="calcularEdad()">Calcular nacimiento</button>
+    <button onclick="comprobarMayorEdad()">Mayoría de edad</button>
+    <button onclick="agregarMensaje()">Append</button>
 
-        <h1>Ejercicio 11 — Modificación de HTML con JavaScript</h1>
+    <div id="cajaSaludo" class="caja"></div>
+    <div id="cajaSuma" class="caja"></div>
+    <div id="cajaNacimiento" class="caja"></div>
+    <div id="cajaEdad" class="caja"></div>
+    <div id="cajaAppend" class="caja"></div>
 
-        <button onclick="saludar()">Saludar</button>
-        <button onclick="sumarDosNumeros()">Sumar dos números</button>
-        <button onclick="calcularEdad()">Calcular nacimiento</button>
-        <button onclick="comprobarMayorEdad()">Mayoría de edad</button>
-        <button onclick="agregarMensaje()">Append</button>
+    <script>
 
-        <div id="cajaSaludo" class="caja"></div>
-        <div id="cajaSuma" class="caja"></div>
-        <div id="cajaNacimiento" class="caja"></div>
-        <div id="cajaEdad" class="caja"></div>
-        <div id="cajaAppend" class="caja"></div>
+        function saludar() {
 
-        <script>
-function saludar() {
+            let caja = document.getElementById("cajaSaludo");
 
-        let caja = document.getElementById("cajaSaludo");
+            caja.innerHTML = "<h2>Hola desde JavaScript</h2>";
+        }
 
-        caja.innerHTML = "<h2>Hola desde JavaScript</h2>";
+        function sumarDosNumeros() {
 
-    }
+            let numero1 = Number(prompt("Introduce el primer número"));
+            let numero2 = Number(prompt("Introduce el segundo número"));
 
-    function sumarDosNumeros() {
+            let suma = numero1 + numero2;
 
-        let numero1 = Number(prompt("Introduce el primer número"));
-        let numero2 = Number(prompt("Introduce el segundo número"));
+            let caja = document.getElementById("cajaSuma");
 
-        let suma = numero1 + numero2;
+            caja.innerHTML = "<p>La suma es: " + suma + "</p>";
+        }
 
-        let caja = document.getElementById("cajaSuma");
+        function comprobarMayorEdad() {
 
-        caja.innerHTML = "<p>La suma es: " + suma + "</p>";
+            let edad = Number(prompt("Introduce tu edad"));
 
-    }
+            let caja = document.getElementById("cajaEdad");
 
-    function comprobarMayorEdad() {
-        var edad = Number(prompt("Introduce tu edad"));
+            if (edad >= 18) {
+                caja.innerHTML = "<p>Eres mayor de edad</p>";
+            } else {
+                caja.innerHTML = "<p>Eres menor de edad</p>";
+            }
+        }
 
-  
-    let caja = document.getElementById("cajaEdad");
+        function calcularEdad() {
 
-    if (edad >= 18) {
-        caja.innerHTML = "<p>Eres mayor de edad</p>";
-    } else {
-        caja.innerHTML = "<p>Eres menor de edad</p>";
-    }
+            let edad = Number(prompt("Introduce tu edad"));
+            let anioActual = 2026;
 
-}
-    }
- function calcularEdad() {
-        var edad = Number(prompt("Introduce tu edad"));
-        var anioActual = 2026;
+            let fechaNacimiento = anioActual - edad;
 
-        var fechaNacimiento = anioActual - edad;
-   let caja = document.getElementById("cajaNacimiento");
+            let caja = document.getElementById("cajaNacimiento");
 
-    caja.innerHTML = "<p>Tu año aproximado de nacimiento es: " + fechaNacimiento + "</p>";
-            function agregarMensaje() {
+            caja.innerHTML =
+                "<p>Tu año aproximado de nacimiento es: " +
+                fechaNacimiento +
+                "</p>";
+        }
 
-        let caja = document.getElementById("cajaAppend");
+        function agregarMensaje() {
 
-        caja.append(" Tonto el que lo lea");
+            let caja = document.getElementById("cajaAppend");
 
-    } 
-     function mostrarColor() {
+            caja.append(" Tonto el que lo lea");
+        }
 
-    let caja = document.getElementById("cajaColor");
+        function mostrarColor() {
 
-    caja.innerHTML = "<h3 style='color:blue'>Este texto es azul</h3>";
+            let caja = document.getElementById("cajaColor");
 
-}
+            caja.innerHTML =
+                "<h3 style='color:blue'>Este texto es azul</h3>";
+        }
 
-        </script>
+    </script>
 
-    </body>
-    </html>
+</body>
+</html>
