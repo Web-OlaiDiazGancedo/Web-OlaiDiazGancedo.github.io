@@ -58,28 +58,39 @@ function saludar() {
     function comprobarMayorEdad() {
         var edad = Number(prompt("Introduce tu edad"));
 
-        if (edad >= 18) {
-            alert("Eres mayor de edad.");
-        } else {
-            alert("Eres menor de edad.");
-        }
+  
+    let caja = document.getElementById("cajaEdad");
+
+    if (edad >= 18) {
+        caja.innerHTML = "<p>Eres mayor de edad</p>";
+    } else {
+        caja.innerHTML = "<p>Eres menor de edad</p>";
+    }
+
+}
     }
  function calcularEdad() {
         var edad = Number(prompt("Introduce tu edad"));
         var anioActual = 2026;
 
         var fechaNacimiento = anioActual - edad;
+   let caja = document.getElementById("cajaNacimiento");
 
-        alert("Tu año aproximado de nacimiento es: " + fechaNacimiento);
-    }
-
+    caja.innerHTML = "<p>Tu año aproximado de nacimiento es: " + fechaNacimiento + "</p>";
             function agregarMensaje() {
 
         let caja = document.getElementById("cajaAppend");
 
-        caja.append(" Nuevo mensaje añadido ");
+        caja.append(" Tonto el que lo lea");
 
-    }
+    } 
+     function mostrarColor() {
+
+    let caja = document.getElementById("cajaColor");
+
+    caja.innerHTML = "<h3 style='color:blue'>Este texto es azul</h3>";
+
+}
 
         </script>
 
