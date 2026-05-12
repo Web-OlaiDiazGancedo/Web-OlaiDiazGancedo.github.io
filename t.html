@@ -1,27 +1,99 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Media del curso</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 — innerHTML</title>
+
+    <style>
+        .caja {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-<script>
-let nota_1;
-    let nota_2;
-    let nota_3;
-nota_1 = prompt("Pon tu primera nota");
-    nota_2 = prompt("Pon tu segunda nota");
-    nota_3 = prompt("Pon tu tercera nota");
-nota_1 = parseFloat(nota_1);
-    nota_2 = parseFloat(nota_2);
-    nota_3 = parseFloat(nota_3);
-media=(nota_1+nota_2+nota_3)/3
-if (media > 4.5) {
-    alert("Enhorabuena, has aprobado");
-    document.write("<h1>Enhorabuena, has aprobado</h1>");
-} else {
-    alert("Estas suspenso");
-    document.write("<h1>Estas suspenso</h1>");
-}
-</script>
+
+    <h1>Ejercicio 11 — Modificación de HTML con JavaScript</h1>
+
+    <button onclick="saludar()">Saludar</button>
+    <button onclick="sumarDosNumeros()">Sumar dos números</button>
+    <button onclick="calcularEdad()">Calcular nacimiento</button>
+    <button onclick="comprobarMayorEdad()">Mayoría de edad</button>
+    <button onclick="agregarMensaje()">Append</button>
+
+    <div id="cajaSaludo" class="caja"></div>
+    <div id="cajaSuma" class="caja"></div>
+    <div id="cajaNacimiento" class="caja"></div>
+    <div id="cajaEdad" class="caja"></div>
+    <div id="cajaAppend" class="caja"></div>
+
+    <script>
+
+        function saludar() {
+
+            let caja = document.getElementById("cajaSaludo");
+
+            caja.innerHTML = "<h2>Hola desde JavaScript</h2>";
+        }
+
+        function sumarDosNumeros() {
+
+            let numero1 = Number(prompt("Introduce el primer número"));
+            let numero2 = Number(prompt("Introduce el segundo número"));
+
+            let suma = numero1 + numero2;
+
+            let caja = document.getElementById("cajaSuma");
+
+            caja.innerHTML = "<p>La suma es: " + suma + "</p>";
+        }
+
+        function comprobarMayorEdad() {
+
+            let edad = Number(prompt("Introduce tu edad"));
+
+            let caja = document.getElementById("cajaEdad");
+
+            if (edad >= 18) {
+                caja.innerHTML = "<p>Eres mayor de edad</p>";
+            } else {
+                caja.innerHTML = "<p>Eres menor de edad</p>";
+            }
+        }
+
+        function calcularEdad() {
+
+            let edad = Number(prompt("Introduce tu edad"));
+            let anioActual = 2026;
+
+            let fechaNacimiento = anioActual - edad;
+
+            let caja = document.getElementById("cajaNacimiento");
+
+            caja.innerHTML =
+                "<p>Tu año aproximado de nacimiento es: " +
+                fechaNacimiento +
+                "</p>";
+        }
+
+        function agregarMensaje() {
+
+            let caja = document.getElementById("cajaAppend");
+
+            caja.append(" Tonto el que lo lea");
+        }
+
+        function mostrarColor() {
+
+            let caja = document.getElementById("cajaColor");
+
+            caja.innerHTML =
+                "<h3 style='color:blue'>Este texto es azul</h3>";
+        }
+
+    </script>
 
 </body>
 </html>
